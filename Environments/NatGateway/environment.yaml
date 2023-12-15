@@ -1,0 +1,61 @@
+name: NatGateway
+version: 1.0.0
+summary: Azure virtual network NAT gateway
+description: Deploys a virtual network NAT gateway in Azure
+runner: ARM
+templatePath: azuredeploy.json
+parameters:
+- id: "location"
+  name: "location"
+  description: "Location to deploy the environment resources"
+  default: "[resourceGroup().location]"
+  type: "string"
+  required: true
+- id: "name"
+  name: "name"
+  description: "Location of the NAT gateway"
+  default: ""
+  type: "string"
+  required: false
+- id: "prefix"
+  name: "prefix"
+  description: "Name of the NAT gateway"
+  default: ""
+  type: "string"
+  required: false
+- id: "tags"
+  name: "tags"
+  description: "The tags to apply to new resources"
+  default: {}
+  type: "object"
+  required: false
+- id: "idleTimeoutInMinutes"
+  name: "idleTimeoutInMinutes"
+  description: "The idleTimeoutInMinutes to use for virtual network gateway"
+  default: 1
+  type: int
+  required: false
+- id: "publicIpAddresses"
+  name: "publicIpAddresses"
+  description: "The publicIpAddresses to use for virtual network gateway"
+  default: []
+  type: array
+  required: false
+- id: "publicIpPrefixes"
+  name: "publicIpPrefixes"
+  description: "The publicIpPrefixes to use for virtual network gateway"
+  default: []
+  type: array
+  required: false
+- id: "isZoneRedundant"
+  name: "isZoneRedundant"
+  description: "The isZoneRedundant to use for virtual network gateway"
+  default: false
+  type: bool
+  required: false
+- id: "zones"
+  name: "zones"
+  description: "The zones to use for virtual network gateway"
+  default: []
+  type: array
+  required: false
