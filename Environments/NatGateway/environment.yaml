@@ -3,7 +3,7 @@ version: 1.0.0
 summary: Azure virtual network NAT gateway environment
 description: Deploys a virtual network NAT gateway in Azure
 runner: ARM
-templatePath: azuredeploy.json
+templatePath: main.bicep
 parameters:
 - id: "location"
   name: "location"
