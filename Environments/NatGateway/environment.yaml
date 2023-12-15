@@ -1,6 +1,6 @@
 name: NatGateway
 version: 1.0.0
-summary: Azure virtual network NAT gateway
+summary: Azure virtual network NAT gateway environment
 description: Deploys a virtual network NAT gateway in Azure
 runner: ARM
 templatePath: azuredeploy.json
@@ -49,7 +49,7 @@ parameters:
   required: false
 - id: "isZoneRedundant"
   name: "isZoneRedundant"
-  description: "The isZoneRedundant to use for virtual network gateway"
+  description: "The isZoneRedundant to use for virtual network"
   default: false
   type: bool
   required: false
