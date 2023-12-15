@@ -33,7 +33,7 @@ parameters:
   name: "idleTimeoutInMinutes"
   description: "The idleTimeoutInMinutes to use for virtual network gateway"
   default: 1
-  type: integer
+  type: "integer"
   required: false
 - id: "publicIpAddresses"
   name: "publicIpAddresses"
@@ -51,7 +51,7 @@ parameters:
   name: "isZoneRedundant"
   description: "The isZoneRedundant to use for virtual network"
   default: false
-  type: bool
+  type: boolean
   required: false
 - id: "zones"
   name: "zones"
