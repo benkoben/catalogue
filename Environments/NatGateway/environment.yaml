@@ -33,7 +33,7 @@ parameters:
   name: "idleTimeoutInMinutes"
   description: "The idleTimeoutInMinutes to use for virtual network gateway"
   default: 1
-  type: int
+  type: integer
   required: false
 - id: "publicIpAddresses"
   name: "publicIpAddresses"
